@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  petnet:
+    image: petnet:latest
+    environment:
+      - PARTY=party_a
+    volumes:
+      - ./parties:/app/parties
+    ports:
+      - "1235:1235"
+    depends_on:
+      - redis
+
+  redis:
+    image: redis:6
+    volumes:
+      - redis-data:/data
+
+volumes:
+  redis-data:

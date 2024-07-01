@@ -1,0 +1,4 @@
+redis~=5.0.0
+grpcio~=1.62.1
+protobuf~=4.25.3
+python-snappy~=0.7.1

@@ -1,0 +1,10 @@
+docker/
+sdk/
+test/
+.dockerignore
+.gitignore
+.pre-commit-config.yaml
+.pylintrc
+.style.yapf
+.git/
+**/__pycache__/
